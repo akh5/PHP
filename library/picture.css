@@ -1,0 +1,53 @@
+.picture{
+    position: relative;
+    top: 45px;
+    width: 796px;
+    height: 326px;
+    left: 245px;
+    background-color: #8a8a8a;
+    overflow: hidden;
+
+}
+.picture img{
+    position: absolute;
+    opacity: 0;
+}
+.picture .left,.picture .right{
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 3em;
+    text-align: center;
+    line-height: 70px;
+    background-color: rgba(0,0,0,0.5);
+    color: rgb(255,255,255);
+    cursor: pointer;
+    z-index: 1000;
+}
+.picture .left{
+    left: -40px;
+    transition: all 0.7s ease-in-out
+}
+.picture .right{
+    right: -40px;
+    transition: all 0.7s ease-in-out
+}
+
+.picture .left:hover{
+    left: 1px;
+    background-color: rgba(0,0,0,0.8);
+    transition: all 0.7s ease-in-out;
+}
+.picture .right:hover{
+    right: 1px;
+    background-color: rgba(0,0,0,0.8);
+    transition: all 0.7s ease-in-out;
+}
+.images.active{
+    z-index: 100;
+    opacity: 1;
+    transition: all 1.5s ease-out;
+}

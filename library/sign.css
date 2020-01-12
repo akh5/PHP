@@ -1,0 +1,39 @@
+.sign{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 450px;
+    height: 400px;
+    border-radius: 8px;
+    background-color: cornsilk;
+    font-size: 25px;
+    font-weight: bold;
+    display: none;
+    transition: all 1.5s ease-out;
+    z-index: 100001;
+}
+.sign div{
+    margin-left: 50px;
+    white-space: pre;
+    margin-bottom: 30px;
+}
+.sign div input{
+    width: 240px;
+    height: 30px;
+    border-radius: 5px;
+}
+.sign .sin{
+    margin-left: 70px;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: darkmagenta;
+    text-align: center;
+    cursor: pointer;
+}
+.sign img{
+    width: 30px;
+}
