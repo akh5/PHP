@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>借书</title>
+    <style>
+        body{
+            background-image: url("Public/img/ebe6e4199ff34090653bbabc5a885ccf.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        div{
+            position: absolute;
+            margin-top: 50px;
+            width: 1200px;
+            height: 700px;
+            border: #963bec solid;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: wheat;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <table width='1200px' border='1'>
+        <th>书号</th><th>书名</th><th>类别</th><th>借阅状态</th><th>剩余数量</th><th>操作</th>
+        <{foreach $arrs as $arr}>
+            <tr>
+                <{foreach $arr as $value}>
+                <td><{$value}></td>
+                <{/foreach}>
+                <td><a href='?c=borrow&a=borrow&bn=<{$arr['BookName']}>'>借书</a></td>
+            </tr>
+            
+        <{/foreach}>
+    </table>
+
+</div>
+
+</body>
+</html>
