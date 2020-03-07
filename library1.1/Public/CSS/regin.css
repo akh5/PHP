@@ -1,0 +1,55 @@
+.regin{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 450px;
+    height: 350px;
+    border-radius: 8px;
+    background-color: cornsilk;
+    display: none;
+    transition: all 1.5s ease-out;
+    z-index: 100001;
+}
+.regin p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.regin div{
+    margin-left: 50px;
+}
+
+.regin input{
+    position: relative;
+    width: 270px;
+    height: 34px;
+    border-radius: 7%;
+    margin-bottom: 30px;
+}
+.regin img{
+    width: 25px;
+    margin-right: 0;
+}
+
+.regin .rin{
+    position: relative;
+    width: 270px;
+    height: 40px;
+    margin-left: 70px;
+    background-color: greenyellow;
+    cursor: pointer;
+    text-align: center;
+    line-height: 35px;
+}
+.rin pre{
+    font-size: 25px;
+    font-weight: bold;
+}
+.close{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    cursor: pointer;
+}
